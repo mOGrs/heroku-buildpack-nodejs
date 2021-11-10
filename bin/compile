@@ -16,8 +16,8 @@ BPLOG_PREFIX="buildpack.nodejs"
 ### Configure directories
 
 BUILD_DIR="${1:-}/broker"
-CACHE_DIR=${2:-}
-ENV_DIR=${3:-}
+CACHE_DIR="${2:-}/broker"
+ENV_DIR="${3:-}/broker"
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
 ### Load dependencies
