@@ -17,6 +17,7 @@ BPLOG_PREFIX="buildpack.nodejs"
 echo ${1:-}
 echo ${2:-}
 echo ${3:-}
+ls
 BUILD_DIR="${1:-}/broker"
 CACHE_DIR="${2:-}/broker"
 ENV_DIR="${3:-}/broker"
