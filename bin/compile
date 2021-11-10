@@ -14,7 +14,9 @@ unset GIT_DIR     # Avoid GIT_DIR leak from previous build steps
 BPLOG_PREFIX="buildpack.nodejs"
 
 ### Configure directories
-
+echo ${1:-}
+echo ${2:-}
+echo ${3:-}
 BUILD_DIR="${1:-}/broker"
 CACHE_DIR="${2:-}/broker"
 ENV_DIR="${3:-}/broker"
